@@ -14,8 +14,10 @@ function getRandomAlphabet() {
     const index = Math.round(mathRandom);
     const alphabet = alphaArr[index];
     return alphabet;
-
 }
-function setAlphabet() {
-  
+function setBg(elementId) {
+    document.getElementById(elementId).classList.add('bg-orange-400');
+}
+function removeBg(elementId) {
+    document.getElementById(elementId).classList.remove('bg-orange-400');
 }
